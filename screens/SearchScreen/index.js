@@ -24,11 +24,11 @@ const ScreenComponent = () => {
     } // More keywords...
     ]
   };
-  return <SafeAreaView style={_styles.hVeVbrBg}>
-      <View style={_styles.cyqKbmoI}>
-        <TextInput style={_styles.SkQYKksx} placeholder="Search" />
-        <Text style={_styles.TcLcyxmG}>For you</Text>
-        <Text style={_styles.utbOmpJz}>Trending</Text>
+  return <SafeAreaView style={_styles.uvtwyups}>
+      <View style={_styles.GCohblHO}>
+        <TextInput style={_styles.XzcIEmpG} placeholder="Search" />
+        <Text style={_styles.MgQHrbCG}>For you</Text>
+        <Text style={_styles.DhAZMtkq}>Trending</Text>
         <ScrollView>
           {dummyData.trendingKeywords.map(item => <View key={item.keyword}>
               <Text>{item.keyword}</Text>
@@ -36,12 +36,12 @@ const ScreenComponent = () => {
               <Text>{item.comments}</Text>
             </View>)}
         </ScrollView>
-        <Text style={_styles.MqqPfxek}>Posts</Text>
+        <Text style={_styles.JbHQProH}>Posts</Text>
         <ScrollView>
           {dummyData.posts.map(post => <View key={post.id}>
               <Image source={{
             uri: post.userProfilePic
-          }} style={_styles.aNTRnLXJ} />
+          }} style={_styles.uUzgYWTI} />
               <Text>{post.userName}</Text>
               <Text>{post.handle}</Text>
               <Text>{post.award}</Text>
@@ -74,31 +74,31 @@ const ScreenComponent = () => {
 export default ScreenComponent;
 
 const _styles = StyleSheet.create({
-  hVeVbrBg: {
+  uvtwyups: {
     flex: 1,
     backgroundColor: "#fff"
   },
-  cyqKbmoI: {
+  GCohblHO: {
     padding: 20
   },
-  SkQYKksx: {
+  XzcIEmpG: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1
   },
-  TcLcyxmG: {
+  MgQHrbCG: {
     fontSize: 20,
     fontWeight: "bold"
   },
-  utbOmpJz: {
+  DhAZMtkq: {
     fontSize: 20,
     fontWeight: "bold"
   },
-  MqqPfxek: {
+  JbHQProH: {
     fontSize: 20,
     fontWeight: "bold"
   },
-  aNTRnLXJ: {
+  uUzgYWTI: {
     width: 50,
     height: 50
   }

@@ -15,99 +15,99 @@ const data = [{
 
 const Post = ({
   item
-}) => <View style={_styles.CnsrRLIl}>
-    <View style={_styles.lyFaoVuA}>
+}) => <View style={_styles.lEmFuUHT}>
+    <View style={_styles.VIPxTvZa}>
       <Image source={{
       uri: item.profilePic
-    }} style={_styles.QccEYXYL} />
-      <View style={_styles.UTeLWMdQ}>
-        <Text style={_styles.ilZbHrDj}>{item.userName}</Text>
-        <Text style={_styles.aWfjYkLZ}>{item.handle}</Text>
+    }} style={_styles.ypQUSENv} />
+      <View style={_styles.sqsqzXbZ}>
+        <Text style={_styles.KHfrdZvP}>{item.userName}</Text>
+        <Text style={_styles.zXnaeuEI}>{item.handle}</Text>
       </View>
     </View>
-    <Text style={_styles.YbZSfKWR}>{item.content}</Text>
-    <View style={_styles.tXdWViKj}>
-      <View style={_styles.HNMIyTbx}>
+    <Text style={_styles.xaFaUvlw}>{item.content}</Text>
+    <View style={_styles.WRCXfYyE}>
+      <View style={_styles.SlxAzTRb}>
         <TouchableOpacity>
           <Text>Upvote</Text>
         </TouchableOpacity>
-        <Text style={_styles.ziShjXKX}>{item.upvotes}</Text>
+        <Text style={_styles.UEmGKnWT}>{item.upvotes}</Text>
       </View>
-      <View style={_styles.jbLwlICu}>
+      <View style={_styles.jhqHuEHb}>
         <TouchableOpacity>
           <Text>Share</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={_styles.HOjxfale}>
+        <TouchableOpacity style={_styles.lZZOFFja}>
           <Text>Bookmark</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={_styles.INkVHztj}>
+        <TouchableOpacity style={_styles.dPcJzOxu}>
           <Text>Comment</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={_styles.ZEFlCFYM}>
+        <TouchableOpacity style={_styles.yWbrZpWK}>
           <Text>More</Text>
         </TouchableOpacity>
       </View>
     </View>
   </View>;
 
-const App = () => <SafeAreaView style={_styles.HTkYEQkb}>
+const App = () => <SafeAreaView style={_styles.vqnFXTxx}>
     <FlatList data={data} renderItem={Post} keyExtractor={item => item.id} />
   </SafeAreaView>;
 
 export default App;
 
 const _styles = StyleSheet.create({
-  CnsrRLIl: {
+  lEmFuUHT: {
     padding: 10,
     borderBottomWidth: 1,
     borderBottomColor: "#ccc"
   },
-  lyFaoVuA: {
+  VIPxTvZa: {
     flexDirection: "row",
     alignItems: "center"
   },
-  QccEYXYL: {
+  ypQUSENv: {
     width: 50,
     height: 50,
     borderRadius: 25
   },
-  UTeLWMdQ: {
+  sqsqzXbZ: {
     marginLeft: 10
   },
-  ilZbHrDj: {
+  KHfrdZvP: {
     fontSize: 18
   },
-  aWfjYkLZ: {
+  zXnaeuEI: {
     color: "#888"
   },
-  YbZSfKWR: {
+  xaFaUvlw: {
     marginTop: 10
   },
-  tXdWViKj: {
+  WRCXfYyE: {
     flexDirection: "row",
     justifyContent: "space-between",
     marginTop: 10
   },
-  HNMIyTbx: {
+  SlxAzTRb: {
     flexDirection: "row",
     alignItems: "center"
   },
-  ziShjXKX: {
+  UEmGKnWT: {
     marginLeft: 5
   },
-  jbLwlICu: {
+  jhqHuEHb: {
     flexDirection: "row"
   },
-  HOjxfale: {
+  lZZOFFja: {
     marginLeft: 10
   },
-  INkVHztj: {
+  dPcJzOxu: {
     marginLeft: 10
   },
-  ZEFlCFYM: {
+  yWbrZpWK: {
     marginLeft: 10
   },
-  HTkYEQkb: {
+  vqnFXTxx: {
     flex: 1
   }
 });

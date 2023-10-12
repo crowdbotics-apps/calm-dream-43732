@@ -23,24 +23,24 @@ const ScreenComponent = () => {
 
   const renderItem = ({
     item
-  }) => <View style={_styles.TARqltfr}>
+  }) => <View style={_styles.JyJKUOBu}>
       <Image source={{
       uri: 'https://tinyurl.com/42evm3m3'
-    }} style={_styles.JNtpCsLY} />
-      <View style={_styles.efAxaUSW}>
+    }} style={_styles.SLOLEtyT} />
+      <View style={_styles.dsNirIXM}>
         <Text>{item.name}</Text>
         <Text>{item.handle}</Text>
         <Text>{item.role}</Text>
       </View>
-      <TouchableOpacity style={_styles.avxkZSkX}>
+      <TouchableOpacity style={_styles.BxpuPKHx}>
         <Text>Remove</Text>
       </TouchableOpacity>
     </View>;
 
-  return <SafeAreaView style={_styles.mafcPwfN}>
-      <TextInput placeholder="Group Title" value={groupTitle} onChangeText={setGroupTitle} style={_styles.zgIVwQKY} />
+  return <SafeAreaView style={_styles.dSyHCoJL}>
+      <TextInput placeholder="Group Title" value={groupTitle} onChangeText={setGroupTitle} style={_styles.HwvwJoXc} />
       <Button title="Upload Profile Image" onPress={() => {}} />
-      <TextInput placeholder="Description" value={description} onChangeText={setDescription} style={_styles.qHeMjMqI} />
+      <TextInput placeholder="Description" value={description} onChangeText={setDescription} style={_styles.yyFZGruo} />
       <Button title="Private" onPress={() => setType('Private')} />
       <Button title="Public" onPress={() => setType('Public')} />
       <Text>Description of both types</Text>
@@ -54,30 +54,30 @@ const ScreenComponent = () => {
 export default ScreenComponent;
 
 const _styles = StyleSheet.create({
-  TARqltfr: {
+  JyJKUOBu: {
     flexDirection: "row",
     alignItems: "center",
     marginVertical: 10
   },
-  JNtpCsLY: {
+  SLOLEtyT: {
     width: 50,
     height: 50,
     borderRadius: 25
   },
-  efAxaUSW: {
+  dsNirIXM: {
     marginLeft: 10
   },
-  avxkZSkX: {
+  BxpuPKHx: {
     marginLeft: "auto"
   },
-  mafcPwfN: {
+  dSyHCoJL: {
     flex: 1,
     padding: 20
   },
-  zgIVwQKY: {
+  HwvwJoXc: {
     marginBottom: 20
   },
-  qHeMjMqI: {
+  yyFZGruo: {
     marginBottom: 20,
     marginTop: 20
   }

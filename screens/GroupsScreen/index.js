@@ -22,25 +22,25 @@ const GroupScreen = () => {
 
   const renderItem = ({
     item
-  }) => <TouchableOpacity style={_styles.myxcJScq} onPress={() => alert('Go to Specific Group Screen')}>
+  }) => <TouchableOpacity style={_styles.OntkJxrD} onPress={() => alert('Go to Specific Group Screen')}>
       <Image source={{
       uri: item.image
-    }} style={_styles.IICNjTPf} />
-      <View style={_styles.TRDGbkzd}>
-        <Text style={_styles.ZUldnsBZ}>{item.title}</Text>
+    }} style={_styles.gInNJjuE} />
+      <View style={_styles.METyzWPX}>
+        <Text style={_styles.avOeTlna}>{item.title}</Text>
         <Text>{item.description}</Text>
         <Button title="Join" onPress={() => alert('Join the group')} />
       </View>
     </TouchableOpacity>;
 
-  return <SafeAreaView style={_styles.TjLMtACg}>
+  return <SafeAreaView style={_styles.oUnqCyJC}>
       <Image source={{
       uri: 'https://tinyurl.com/42evm3m3'
-    }} style={_styles.nEmPIEkS} />
-      <Text style={_styles.vGjFeKbq}>List of groups I'm part of</Text>
+    }} style={_styles.QXhvilcf} />
+      <Text style={_styles.EukOFUeu}>List of groups I'm part of</Text>
       <Button title="Add a new group" onPress={() => alert('Add a new group')} />
-      <TextInput placeholder="Search" style={_styles.vgYBrWJy} />
-      <Text style={_styles.WQqJFMPS}>Filter</Text>
+      <TextInput placeholder="Search" style={_styles.WKsquqyr} />
+      <Text style={_styles.JsTrgFNO}>Filter</Text>
       <Text>Trending</Text>
       <Text>Mutual friends</Text>
       <Text>Most members</Text>
@@ -52,43 +52,43 @@ const GroupScreen = () => {
 export default GroupScreen;
 
 const _styles = StyleSheet.create({
-  myxcJScq: {
+  OntkJxrD: {
     flexDirection: "row",
     margin: 10
   },
-  IICNjTPf: {
+  gInNJjuE: {
     width: 50,
     height: 50,
     borderRadius: 25
   },
-  TRDGbkzd: {
+  METyzWPX: {
     marginLeft: 10
   },
-  ZUldnsBZ: {
+  avOeTlna: {
     fontSize: 18,
     fontWeight: "bold"
   },
-  TjLMtACg: {
+  oUnqCyJC: {
     flex: 1,
     padding: 10
   },
-  nEmPIEkS: {
+  QXhvilcf: {
     width: 100,
     height: 100,
     borderRadius: 50
   },
-  vGjFeKbq: {
+  EukOFUeu: {
     fontSize: 24,
     fontWeight: "bold",
     marginVertical: 10
   },
-  vgYBrWJy: {
+  WKsquqyr: {
     borderWidth: 1,
     borderRadius: 5,
     marginVertical: 10,
     padding: 5
   },
-  WQqJFMPS: {
+  JsTrgFNO: {
     fontSize: 18,
     fontWeight: "bold",
     marginVertical: 10

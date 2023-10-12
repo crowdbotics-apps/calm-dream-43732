@@ -15,33 +15,33 @@ const dummyData = [{
 ];
 
 const ScreenComponent = () => {
-  return <SafeAreaView style={_styles.dRwgrhKn}>
-      <View style={_styles.nduOZLJV}>
+  return <SafeAreaView style={_styles.IfVbbQfU}>
+      <View style={_styles.xILmknDO}>
         <Button title="Back" onPress={() => {}} />
-        <View style={_styles.OdQnwTPf}>
+        <View style={_styles.CQdfJzSv}>
           <Image source={{
           uri: 'https://tinyurl.com/42evm3m3'
-        }} style={_styles.lOInPHYq} />
-          <View style={_styles.RBaxdoVp}>
-            <Text style={_styles.iUTiwSmY}>User Name</Text>
-            <Text style={_styles.JbFOQjPl}>@handle</Text>
+        }} style={_styles.PdcxgXfh} />
+          <View style={_styles.rnbnaxGO}>
+            <Text style={_styles.OFvGqpIX}>User Name</Text>
+            <Text style={_styles.KKqIkVxe}>@handle</Text>
           </View>
-          <View style={_styles.tzYMQcWQ} />
-          <Text style={_styles.FxjwAerg}>Crowdscore</Text>
+          <View style={_styles.AnhnbcyT} />
+          <Text style={_styles.ZBwqbeDw}>Crowdscore</Text>
         </View>
-        <TextInput style={_styles.ZYajKtQj} placeholder="Search" />
+        <TextInput style={_styles.uvkjsvqb} placeholder="Search" />
         <FlatList data={dummyData} keyExtractor={item => item.id} renderItem={({
         item
-      }) => <View style={_styles.DpzOgMTz}>
+      }) => <View style={_styles.nNfcIGIm}>
               <Image source={{
           uri: 'https://tinyurl.com/42evm3m3'
-        }} style={_styles.fXmzchyk} />
-              <View style={_styles.GXzGPUov}>
-                <Text style={_styles.RKQmfWRq}>{item.name}</Text>
-                <Text style={_styles.ywNqSiGJ}>{item.handle}</Text>
+        }} style={_styles.eZQnsgZZ} />
+              <View style={_styles.CZdCgGxz}>
+                <Text style={_styles.nLrIJuaE}>{item.name}</Text>
+                <Text style={_styles.aZKEEsoD}>{item.handle}</Text>
               </View>
-              <View style={_styles.ayNvbosI} />
-              <Text style={_styles.UdHTDHNH}>{item.score}</Text>
+              <View style={_styles.EkQhmeha} />
+              <Text style={_styles.xscQRiVm}>{item.score}</Text>
             </View>} />
       </View>
     </SafeAreaView>;
@@ -50,42 +50,42 @@ const ScreenComponent = () => {
 export default ScreenComponent;
 
 const _styles = StyleSheet.create({
-  dRwgrhKn: {
+  IfVbbQfU: {
     flex: 1,
     backgroundColor: "#f5f5f5"
   },
-  nduOZLJV: {
+  xILmknDO: {
     padding: 20
   },
-  OdQnwTPf: {
+  CQdfJzSv: {
     flexDirection: "row",
     alignItems: "center",
     marginTop: 20
   },
-  lOInPHYq: {
+  PdcxgXfh: {
     width: 50,
     height: 50,
     borderRadius: 25
   },
-  RBaxdoVp: {
+  rnbnaxGO: {
     marginLeft: 10
   },
-  iUTiwSmY: {
+  OFvGqpIX: {
     fontSize: 18,
     fontWeight: "bold"
   },
-  JbFOQjPl: {
+  KKqIkVxe: {
     fontSize: 16,
     color: "#888"
   },
-  tzYMQcWQ: {
+  AnhnbcyT: {
     flex: 1
   },
-  FxjwAerg: {
+  ZBwqbeDw: {
     fontSize: 24,
     fontWeight: "bold"
   },
-  ZYajKtQj: {
+  uvkjsvqb: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1,
@@ -93,31 +93,31 @@ const _styles = StyleSheet.create({
     borderRadius: 10,
     paddingLeft: 10
   },
-  DpzOgMTz: {
+  nNfcIGIm: {
     flexDirection: "row",
     alignItems: "center",
     marginTop: 20
   },
-  fXmzchyk: {
+  eZQnsgZZ: {
     width: 50,
     height: 50,
     borderRadius: 25
   },
-  GXzGPUov: {
+  CZdCgGxz: {
     marginLeft: 10
   },
-  RKQmfWRq: {
+  nLrIJuaE: {
     fontSize: 18,
     fontWeight: "bold"
   },
-  ywNqSiGJ: {
+  aZKEEsoD: {
     fontSize: 16,
     color: "#888"
   },
-  ayNvbosI: {
+  EkQhmeha: {
     flex: 1
   },
-  UdHTDHNH: {
+  xscQRiVm: {
     fontSize: 24,
     fontWeight: "bold"
   }

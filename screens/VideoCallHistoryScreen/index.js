@@ -16,19 +16,19 @@ const dummyData = [{
 const friends = ['Friend 1', 'Friend 2', 'Friend 3']; // Add more friends here
 
 const VideoCallScreen = () => {
-  return <SafeAreaView style={_styles.rFQjyoOZ}>
-      <TextInput placeholder="Search" style={_styles.ChuGAwkr} />
+  return <SafeAreaView style={_styles.aqvHzmkT}>
+      <TextInput placeholder="Search" style={_styles.ZxWtMHgG} />
       <FlatList data={friends} renderItem={({
       item
-    }) => <TouchableOpacity style={_styles.LsSGAXNZ}>
+    }) => <TouchableOpacity style={_styles.eHAlmrOO}>
             <Text>{item}</Text>
           </TouchableOpacity>} keyExtractor={item => item} />
       <FlatList data={dummyData} renderItem={({
       item
-    }) => <View style={_styles.pvDZlktQ}>
+    }) => <View style={_styles.gzLpVOCv}>
             <Image source={{
         uri: 'https://tinyurl.com/42evm3m3'
-      }} style={_styles.RKiCkLhk} />
+      }} style={_styles.MNgjrHTZ} />
             <View>
               <Text>{item.user}</Text>
               <Text>{new Date(item.timestamp).toLocaleString()}</Text>
@@ -46,28 +46,28 @@ const VideoCallScreen = () => {
 export default VideoCallScreen;
 
 const _styles = StyleSheet.create({
-  rFQjyoOZ: {
+  aqvHzmkT: {
     flex: 1,
     backgroundColor: "#fff"
   },
-  ChuGAwkr: {
+  ZxWtMHgG: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1
   },
-  LsSGAXNZ: {
+  eHAlmrOO: {
     padding: 10,
     borderBottomColor: "#ccc",
     borderBottomWidth: 1
   },
-  pvDZlktQ: {
+  gzLpVOCv: {
     flexDirection: "row",
     justifyContent: "space-between",
     padding: 10,
     borderBottomColor: "#ccc",
     borderBottomWidth: 1
   },
-  RKiCkLhk: {
+  MNgjrHTZ: {
     width: 50,
     height: 50,
     borderRadius: 25

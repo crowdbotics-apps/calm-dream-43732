@@ -29,18 +29,18 @@ const dummyData = {
 };
 
 const StreamScreen = () => {
-  return <SafeAreaView style={_styles.efBTcCMI}>
-      <View style={_styles.kNoAHTJZ}>
+  return <SafeAreaView style={_styles.VWQVBTHq}>
+      <View style={_styles.HXOLhSmB}>
         <Image source={{
         uri: dummyData.user.profilePic
-      }} style={_styles.wSojFARC} />
-        <Text style={_styles.MqbWIMbj}>{dummyData.user.name}</Text>
-        <Text style={_styles.PkffekDI}>{dummyData.user.handle}</Text>
-        <Text style={_styles.rvpCTyFu}>Crowdscore: {dummyData.user.crowdscore}</Text>
-        <TextInput placeholder="Stream Title" style={_styles.LYNhpziO} />
+      }} style={_styles.HIhEkouL} />
+        <Text style={_styles.nALRzSDa}>{dummyData.user.name}</Text>
+        <Text style={_styles.mKjebvdn}>{dummyData.user.handle}</Text>
+        <Text style={_styles.kQaxWbpF}>Crowdscore: {dummyData.user.crowdscore}</Text>
+        <TextInput placeholder="Stream Title" style={_styles.vrOdOglX} />
         <Button title="Start/Stop Streaming" onPress={() => {}} />
-        <Text style={_styles.JTTDbrpX}>Live Video Feed</Text>
-        <View style={_styles.DlqhcoUq}>
+        <Text style={_styles.SjlUOipx}>Live Video Feed</Text>
+        <View style={_styles.MmqZLMIV}>
           <TouchableOpacity>
             <Text>On/Off</Text>
           </TouchableOpacity>
@@ -48,19 +48,19 @@ const StreamScreen = () => {
             <Text>Switch Camera</Text>
           </TouchableOpacity>
         </View>
-        <TouchableOpacity style={_styles.wHWbXdZq}>
+        <TouchableOpacity style={_styles.yCwbWZrd}>
           <Text>Mute/Unmute</Text>
         </TouchableOpacity>
-        <Text style={_styles.RoVRekDw}>Chat</Text>
+        <Text style={_styles.kUszpJzs}>Chat</Text>
         <FlatList data={dummyData.comments} keyExtractor={(item, index) => index.toString()} renderItem={({
         item
       }) => <View>
               <Text>{item.user}</Text>
               <Text>{item.comment}</Text>
             </View>} />
-        <TextInput placeholder="Add comment" style={_styles.yGbQmzrs} />
+        <TextInput placeholder="Add comment" style={_styles.ggyXgSJW} />
         <Button title="Post" onPress={() => {}} />
-        <Text style={_styles.rwDlSwLk}>Viewer List</Text>
+        <Text style={_styles.ieZsCNdo}>Viewer List</Text>
         <FlatList data={dummyData.viewers} keyExtractor={(item, index) => index.toString()} renderItem={({
         item
       }) => <View>
@@ -76,61 +76,61 @@ const StreamScreen = () => {
 export default StreamScreen;
 
 const _styles = StyleSheet.create({
-  efBTcCMI: {
+  VWQVBTHq: {
     flex: 1,
     backgroundColor: "#fff"
   },
-  kNoAHTJZ: {
+  HXOLhSmB: {
     padding: 20
   },
-  wSojFARC: {
+  HIhEkouL: {
     width: 100,
     height: 100,
     borderRadius: 50
   },
-  MqbWIMbj: {
+  nALRzSDa: {
     fontSize: 24,
     fontWeight: "bold"
   },
-  PkffekDI: {
+  mKjebvdn: {
     fontSize: 18,
     color: "gray"
   },
-  rvpCTyFu: {
+  kQaxWbpF: {
     fontSize: 18,
     color: "green"
   },
-  LYNhpziO: {
+  vrOdOglX: {
     borderWidth: 1,
     borderColor: "gray",
     borderRadius: 5,
     marginTop: 20
   },
-  JTTDbrpX: {
+  SjlUOipx: {
     fontSize: 18,
     fontWeight: "bold",
     marginTop: 20
   },
-  DlqhcoUq: {
+  MmqZLMIV: {
     flexDirection: "row",
     justifyContent: "space-between",
     marginTop: 20
   },
-  wHWbXdZq: {
+  yCwbWZrd: {
     marginTop: 20
   },
-  RoVRekDw: {
+  kUszpJzs: {
     fontSize: 18,
     fontWeight: "bold",
     marginTop: 20
   },
-  yGbQmzrs: {
+  ggyXgSJW: {
     borderWidth: 1,
     borderColor: "gray",
     borderRadius: 5,
     marginTop: 20
   },
-  rwDlSwLk: {
+  ieZsCNdo: {
     fontSize: 18,
     fontWeight: "bold",
     marginTop: 20

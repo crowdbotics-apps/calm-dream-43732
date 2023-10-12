@@ -20,10 +20,10 @@ const dummyData = {
 const GroupScreen = () => {
   const renderItem = ({
     item
-  }) => <View style={_styles.QUadhSyp}>
+  }) => <View style={_styles.iyBiHDTt}>
       <Image source={{
       uri: item.profilePicture
-    }} style={_styles.vqRUBamG} />
+    }} style={_styles.jveXxtzC} />
       <Text>{item.name}</Text>
       <Text>{item.handle}</Text>
       <Text>{item.role}</Text>
@@ -33,12 +33,12 @@ const GroupScreen = () => {
       <Button title="Report" onPress={() => {}} />
     </View>;
 
-  return <SafeAreaView style={_styles.suhudaxc}>
-      <Text style={_styles.yEMegkUt}>{dummyData.groupName}</Text>
+  return <SafeAreaView style={_styles.nJGkJzCf}>
+      <Text style={_styles.hyFHwpZH}>{dummyData.groupName}</Text>
       <Button title="Edit" onPress={() => {}} />
       <Image source={{
       uri: 'https://tinyurl.com/42evm3m3'
-    }} style={_styles.ElQDmmSQ} />
+    }} style={_styles.PUKgMwgh} />
       <Button title="Upload new" onPress={() => {}} />
       <Text>{dummyData.groupDescription}</Text>
       <Button title="Edit" onPress={() => {}} />
@@ -53,7 +53,7 @@ const GroupScreen = () => {
 export default GroupScreen;
 
 const _styles = StyleSheet.create({
-  QUadhSyp: {
+  iyBiHDTt: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
@@ -61,20 +61,20 @@ const _styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: "#ddd"
   },
-  vqRUBamG: {
+  jveXxtzC: {
     width: 50,
     height: 50,
     borderRadius: 25
   },
-  suhudaxc: {
+  nJGkJzCf: {
     flex: 1,
     padding: 20
   },
-  yEMegkUt: {
+  hyFHwpZH: {
     fontSize: 24,
     fontWeight: "bold"
   },
-  ElQDmmSQ: {
+  PUKgMwgh: {
     width: 100,
     height: 100,
     borderRadius: 50

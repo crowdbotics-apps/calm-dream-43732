@@ -15,18 +15,18 @@ const dummyData = [{
 ];
 
 const ShareScreen = () => {
-  return <SafeAreaView style={_styles.pgciVGcM}>
-      <View style={_styles.lNtdobDZ}>
+  return <SafeAreaView style={_styles.PlMlSGse}>
+      <View style={_styles.EhMKrTYM}>
         <Button title="Share As a Post" onPress={() => {}} />
         <Text>To a user as a direct message</Text>
-        <TextInput style={_styles.vFoEyvbQ} placeholder="Search" />
+        <TextInput style={_styles.JhxEXhBy} placeholder="Search" />
         <FlatList data={dummyData} keyExtractor={item => item.id} renderItem={({
         item
-      }) => <View style={_styles.dTFLBgHl}>
+      }) => <View style={_styles.FpYsaqDC}>
               <Image source={{
           uri: item.image
-        }} style={_styles.fulMTGDv} />
-              <View style={_styles.nWBoKZFq}>
+        }} style={_styles.QIJcvAYH} />
+              <View style={_styles.MeLlmfVv}>
                 <Text>{item.name}</Text>
                 <Text>Crowdscore: {item.score}</Text>
                 <Text>Handle ID: {item.id}</Text>
@@ -42,29 +42,29 @@ const ShareScreen = () => {
 export default ShareScreen;
 
 const _styles = StyleSheet.create({
-  pgciVGcM: {
+  PlMlSGse: {
     flex: 1,
     backgroundColor: "#fff"
   },
-  lNtdobDZ: {
+  EhMKrTYM: {
     padding: 20
   },
-  vFoEyvbQ: {
+  JhxEXhBy: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1
   },
-  dTFLBgHl: {
+  FpYsaqDC: {
     flexDirection: "row",
     alignItems: "center",
     marginVertical: 10
   },
-  fulMTGDv: {
+  QIJcvAYH: {
     width: 50,
     height: 50,
     borderRadius: 25
   },
-  nWBoKZFq: {
+  MeLlmfVv: {
     marginLeft: 10
   }
 });

@@ -3,103 +3,119 @@ import React from 'react';
 import { SafeAreaView, View, Text, Image, TouchableOpacity, ScrollView, TextInput } from 'react-native';
 
 const ScreenComponent = () => {
-  const dummyData = {
-    posts: [{
-      id: 1,
-      userProfilePic: 'https://tinyurl.com/42evm3m3',
-      userName: 'John Doe',
-      handle: '@johndoe',
-      award: 'Gold',
-      timestamp: '2021-09-15T10:30:00',
-      content: 'This is a sample post',
-      votes: 123,
-      comments: 45,
-      upvoted: false
-    } // More posts...
-    ],
-    trendingKeywords: [{
-      keyword: 'React Native',
-      votes: 123,
-      comments: 45
-    } // More keywords...
-    ]
-  };
-  return <SafeAreaView style={_styles.uvtwyups}>
-      <View style={_styles.GCohblHO}>
-        <TextInput style={_styles.XzcIEmpG} placeholder="Search" />
-        <Text style={_styles.MgQHrbCG}>For you</Text>
-        <Text style={_styles.DhAZMtkq}>Trending</Text>
-        <ScrollView>
-          {dummyData.trendingKeywords.map(item => <View key={item.keyword}>
-              <Text>{item.keyword}</Text>
-              <Text>{item.votes}</Text>
-              <Text>{item.comments}</Text>
-            </View>)}
-        </ScrollView>
-        <Text style={_styles.JbHQProH}>Posts</Text>
-        <ScrollView>
-          {dummyData.posts.map(post => <View key={post.id}>
-              <Image source={{
-            uri: post.userProfilePic
-          }} style={_styles.uUzgYWTI} />
-              <Text>{post.userName}</Text>
-              <Text>{post.handle}</Text>
-              <Text>{post.award}</Text>
-              <Text>{post.timestamp}</Text>
-              <Text>{post.content}</Text>
-              <View>
-                <TouchableOpacity onPress={() => {}}>
-                  <Text>{post.upvoted ? 'Upvoted' : 'Upvote'}</Text>
-                </TouchableOpacity>
-                <Text>{post.votes}</Text>
-              </View>
-              <TouchableOpacity onPress={() => {}}>
-                <Text>Share</Text>
-              </TouchableOpacity>
-              <TouchableOpacity onPress={() => {}}>
-                <Text>Bookmark</Text>
-              </TouchableOpacity>
-              <TouchableOpacity onPress={() => {}}>
-                <Text>Comment</Text>
-              </TouchableOpacity>
-              <TouchableOpacity onPress={() => {}}>
-                <Text>More options</Text>
-              </TouchableOpacity>
-            </View>)}
-        </ScrollView>
+  return <SafeAreaView style={_styles.VfMbZGNc}>
+      <View style={_styles.NXtIoaWf}>
+        <TextInput style={_styles.YtMuLnuB} placeholder="Search" />
+        <Text style={_styles.VXSPhalo}>Filters</Text>
+        <Text style={_styles.YzJxDzfy}>For you</Text>
+        <Text style={_styles.waCcUZAi}>Trending</Text>
+        <Text style={_styles.YzRNYBAV}>News</Text>
+        <Text style={_styles.UYOclUag}>Sports</Text>
       </View>
+      <ScrollView>
+        <View style={_styles.cgtlQzCm}>
+          <Text style={_styles.vsxfjlpB}>Posts</Text>
+          <View style={_styles.yKTLBtBt}>
+            <Image source={{
+            uri: 'https://tinyurl.com/42evm3m3'
+          }} style={_styles.oeigPNuu} />
+            <View style={_styles.dEEoIVVj}>
+              <Text style={_styles.AkOMpWqS}>User name</Text>
+              <Text>@username</Text>
+            </View>
+          </View>
+          <Text style={_styles.ojVfcWFE}>Content</Text>
+          <View style={_styles.RVdjizOt}>
+            <TouchableOpacity>
+              <Text>Upvote</Text>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Text>Share</Text>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Text>Bookmark</Text>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Text>Comment</Text>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Text>More options</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </ScrollView>
     </SafeAreaView>;
 };
 
 export default ScreenComponent;
 
 const _styles = StyleSheet.create({
-  uvtwyups: {
+  VfMbZGNc: {
     flex: 1,
-    backgroundColor: "#fff"
+    backgroundColor: "#f5f5f5"
   },
-  GCohblHO: {
+  NXtIoaWf: {
     padding: 20
   },
-  XzcIEmpG: {
+  YtMuLnuB: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1
   },
-  MgQHrbCG: {
+  VXSPhalo: {
+    fontSize: 20,
+    fontWeight: "bold",
+    marginTop: 20
+  },
+  YzJxDzfy: {
+    fontSize: 20,
+    fontWeight: "bold",
+    marginTop: 20
+  },
+  waCcUZAi: {
+    fontSize: 20,
+    fontWeight: "bold",
+    marginTop: 20
+  },
+  YzRNYBAV: {
+    fontSize: 20,
+    fontWeight: "bold",
+    marginTop: 20
+  },
+  UYOclUag: {
+    fontSize: 20,
+    fontWeight: "bold",
+    marginTop: 20
+  },
+  cgtlQzCm: {
+    padding: 20
+  },
+  vsxfjlpB: {
     fontSize: 20,
     fontWeight: "bold"
   },
-  DhAZMtkq: {
-    fontSize: 20,
-    fontWeight: "bold"
+  yKTLBtBt: {
+    flexDirection: "row",
+    marginTop: 20
   },
-  JbHQProH: {
-    fontSize: 20,
-    fontWeight: "bold"
-  },
-  uUzgYWTI: {
+  oeigPNuu: {
     width: 50,
-    height: 50
+    height: 50,
+    borderRadius: 25
+  },
+  dEEoIVVj: {
+    marginLeft: 10
+  },
+  AkOMpWqS: {
+    fontSize: 16,
+    fontWeight: "bold"
+  },
+  ojVfcWFE: {
+    marginTop: 20
+  },
+  RVdjizOt: {
+    flexDirection: "row",
+    marginTop: 20,
+    justifyContent: "space-between"
   }
 });

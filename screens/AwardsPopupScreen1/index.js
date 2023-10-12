@@ -26,19 +26,19 @@ const awardsData = [{
 const AwardScreen = () => {
   const renderItem = ({
     item
-  }) => <TouchableOpacity style={_styles.fXDgsiWA}>
+  }) => <TouchableOpacity style={_styles.hYnXQfvG}>
       <Image source={{
       uri: 'https://tinyurl.com/42evm3m3'
-    }} style={_styles.dIOnhLCW} />
+    }} style={_styles.zZPUopUP} />
       <View>
-        <Text style={_styles.jIEiYIxT}>{item.type}</Text>
-        <Text style={_styles.knPciWJn}>Levels: {item.levels}</Text>
+        <Text style={_styles.UUJSDDkp}>{item.type}</Text>
+        <Text style={_styles.rHNnFuul}>Levels: {item.levels}</Text>
       </View>
     </TouchableOpacity>;
 
-  return <SafeAreaView style={_styles.njdIoptD}>
-      <View style={_styles.CpWYiFBR}>
-        <Text style={_styles.uyaKgbgo}>Awards</Text>
+  return <SafeAreaView style={_styles.ujKEoynl}>
+      <View style={_styles.peBXEtlz}>
+        <Text style={_styles.WvnMJRIC}>Awards</Text>
         <FlatList data={awardsData} renderItem={renderItem} keyExtractor={item => item.id} />
       </View>
     </SafeAreaView>;
@@ -47,32 +47,32 @@ const AwardScreen = () => {
 export default AwardScreen;
 
 const _styles = StyleSheet.create({
-  fXDgsiWA: {
+  hYnXQfvG: {
     padding: 10,
     flexDirection: "row",
     alignItems: "center"
   },
-  dIOnhLCW: {
+  zZPUopUP: {
     width: 50,
     height: 50,
     marginRight: 10
   },
-  jIEiYIxT: {
+  UUJSDDkp: {
     fontSize: 18,
     fontWeight: "bold"
   },
-  knPciWJn: {
+  rHNnFuul: {
     fontSize: 16,
     color: "gray"
   },
-  njdIoptD: {
+  ujKEoynl: {
     flex: 1,
     backgroundColor: "#fff"
   },
-  CpWYiFBR: {
+  peBXEtlz: {
     padding: 20
   },
-  uyaKgbgo: {
+  WvnMJRIC: {
     fontSize: 24,
     fontWeight: "bold"
   }

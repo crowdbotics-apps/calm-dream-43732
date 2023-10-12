@@ -1,62 +1,71 @@
-import React, { useState } from 'react';
-import { SafeAreaView, Text, TextInput, Button, StyleSheet, Image, Picker } from 'react-native';
+import React from 'react';
+import { SafeAreaView, StyleSheet, View, Button, ScrollView } from 'react-native';
 
-const WithdrawScreen = () => {
-  const [amount, setAmount] = useState('');
-  const [selectedBank, setSelectedBank] = useState('');
-  const banks = ['Bank A', 'Bank B', 'Bank C', 'Bank D'];
+const ScreenComponent = () => {
   return <SafeAreaView style={styles.container}>
-      <Image style={styles.image} source={{
-      uri: 'https://tinyurl.com/42evm3m3'
-    }} />
-      <Text style={styles.title}>Withdraw Money</Text>
-      <Text style={styles.label}>Amount Input:</Text>
-      <TextInput style={styles.input} onChangeText={setAmount} value={amount} placeholder="Enter amount" keyboardType="numeric" />
-      <Text style={styles.label}>Select Bank Account:</Text>
-      <Picker selectedValue={selectedBank} style={styles.picker} onValueChange={itemValue => setSelectedBank(itemValue)}>
-        {banks.map((bank, index) => <Picker.Item key={index} label={bank} value={bank} />)}
-      </Picker>
-      <Button title="Withdraw Money" onPress={() => alert('Withdrawal Successful')} />
+      <ScrollView>
+        <View style={styles.buttonContainer}>
+          <Button title="My profile" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="My wallet Screen" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="My friends" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Bookmark" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Groups" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Events" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="My wallet" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Manage my events" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Business Pages" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Marketplace" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Ads" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Video call History" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Payment history Screen" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Settings" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Terms and conditions" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Privacy policy" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Log out" onPress={() => {}} />
+        </View>
+      </ScrollView>
     </SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#F5F5F5'
+    backgroundColor: '#fff'
   },
-  image: {
-    width: 100,
-    height: 100,
-    marginBottom: 20
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 20
-  },
-  label: {
-    fontSize: 18,
-    alignSelf: 'flex-start',
-    marginLeft: 20,
-    marginTop: 10
-  },
-  input: {
-    height: 40,
-    width: '90%',
-    borderColor: 'gray',
-    borderWidth: 1,
-    marginTop: 10,
-    paddingLeft: 10
-  },
-  picker: {
-    height: 50,
-    width: '90%',
-    borderColor: 'gray',
-    borderWidth: 1,
-    marginTop: 10
+  buttonContainer: {
+    margin: 10
   }
 });
-export default WithdrawScreen;
+export default ScreenComponent;

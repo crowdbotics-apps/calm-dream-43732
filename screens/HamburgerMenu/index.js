@@ -1,47 +1,71 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, View, Button, Image } from 'react-native';
+import { SafeAreaView, StyleSheet, View, Button, ScrollView } from 'react-native';
 
 const ScreenComponent = () => {
   return <SafeAreaView style={styles.container}>
-      <Image style={styles.image} source={{
-      uri: 'https://tinyurl.com/42evm3m3'
-    }} />
-      <View style={styles.buttonContainer}>
-        <Button title="My profile" onPress={() => {}} />
-        <Button title="My wallet Screen" onPress={() => {}} />
-        <Button title="My friends" onPress={() => {}} />
-        <Button title="Bookmark" onPress={() => {}} />
-        <Button title="Groups" onPress={() => {}} />
-        <Button title="Events" onPress={() => {}} />
-        <Button title="My wallet" onPress={() => {}} />
-        <Button title="Manage my events" onPress={() => {}} />
-        <Button title="Business Pages" onPress={() => {}} />
-        <Button title="Marketplace" onPress={() => {}} />
-        <Button title="Ads" onPress={() => {}} />
-        <Button title="Video call History" onPress={() => {}} />
-        <Button title="Payment history Screen" onPress={() => {}} />
-        <Button title="Settings" onPress={() => {}} />
-        <Button title="Terms and conditions" onPress={() => {}} />
-        <Button title="Privacy policy" onPress={() => {}} />
-        <Button title="Log out" onPress={() => {}} />
-      </View>
+      <ScrollView>
+        <View style={styles.buttonContainer}>
+          <Button title="My profile" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="My wallet Screen" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="My friends" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Bookmark" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Groups" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Events" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="My wallet" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Manage my events" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Business Pages" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Marketplace" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Ads" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Video call History" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Payment history Screen" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Settings" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Terms and conditions" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Privacy policy" onPress={() => {}} />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button title="Log out" onPress={() => {}} />
+        </View>
+      </ScrollView>
     </SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF'
-  },
-  image: {
-    width: 100,
-    height: 100,
-    marginBottom: 50
+    backgroundColor: '#fff'
   },
   buttonContainer: {
-    width: '80%'
+    margin: 10
   }
 });
 export default ScreenComponent;

@@ -15,28 +15,28 @@ const ScreenComponent = () => {
     handle: '@dummyuser',
     award: 'Dummy Award'
   };
-  return <SafeAreaView style={_styles.rHGxrRmf}>
+  return <SafeAreaView style={_styles.baOITIyp}>
       <ScrollView>
-        <View style={_styles.jkRuJOfv}>
+        <View style={_styles.uvmtOEEy}>
           <Image source={{
           uri: 'https://tinyurl.com/42evm3m3'
-        }} style={_styles.bmECCgVT} />
-          <Text style={_styles.vkgqiKyi}>{dummyData.title}</Text>
-          <Text style={_styles.HykrcNHa}>{dummyData.price}</Text>
-          <Text style={_styles.PXDIchdA}>{dummyData.description}</Text>
-          <Text style={_styles.grUFHVnv}>{dummyData.timestamp}</Text>
-          <View style={_styles.ovffLgbp}>
+        }} style={_styles.XKsmTyfu} />
+          <Text style={_styles.taUFpeqB}>{dummyData.title}</Text>
+          <Text style={_styles.WQJSqXqP}>{dummyData.price}</Text>
+          <Text style={_styles.bPLDjuyh}>{dummyData.description}</Text>
+          <Text style={_styles.KgAbDABm}>{dummyData.timestamp}</Text>
+          <View style={_styles.XtMFcAmC}>
             <Image source={{
             uri: dummyData.userProfilePic
-          }} style={_styles.REWgCaHt} />
-            <View style={_styles.nfoIcXlv}>
-              <Text style={_styles.ERXDylgp}>{dummyData.userName}</Text>
-              <Text style={_styles.sHGWRGsV}>{dummyData.handle}</Text>
+          }} style={_styles.QDPLstuS} />
+            <View style={_styles.URXGJskQ}>
+              <Text style={_styles.encuQQFF}>{dummyData.userName}</Text>
+              <Text style={_styles.HwqyHiTD}>{dummyData.handle}</Text>
             </View>
           </View>
-          <Text style={_styles.sYcveHIf}>Crowdscore: {dummyData.crowdScore}</Text>
-          <Text style={_styles.vxujjyXA}>Award: {dummyData.award}</Text>
-          <View style={_styles.MmToBZiT}>
+          <Text style={_styles.gYhDDMSr}>Crowdscore: {dummyData.crowdScore}</Text>
+          <Text style={_styles.bMIjLPki}>Award: {dummyData.award}</Text>
+          <View style={_styles.DLMLALdg}>
             <Button title="Chat" onPress={() => {}} />
             <Button title="Send Friend Request" onPress={() => {}} />
             <Button title="Report" onPress={() => {}} />
@@ -49,70 +49,70 @@ const ScreenComponent = () => {
 export default ScreenComponent;
 
 const _styles = StyleSheet.create({
-  rHGxrRmf: {
+  baOITIyp: {
     flex: 1,
     backgroundColor: "#fff"
   },
-  jkRuJOfv: {
+  uvmtOEEy: {
     alignItems: "center",
     padding: 20
   },
-  bmECCgVT: {
+  XKsmTyfu: {
     width: "100%",
     height: 200
   },
-  vkgqiKyi: {
+  taUFpeqB: {
     fontSize: 24,
     fontWeight: "bold",
     marginTop: 20
   },
-  HykrcNHa: {
+  WQJSqXqP: {
     fontSize: 20,
     color: "#888",
     marginTop: 10
   },
-  PXDIchdA: {
+  bPLDjuyh: {
     fontSize: 16,
     color: "#666",
     marginTop: 10
   },
-  grUFHVnv: {
+  KgAbDABm: {
     fontSize: 14,
     color: "#444",
     marginTop: 10
   },
-  ovffLgbp: {
+  XtMFcAmC: {
     flexDirection: "row",
     alignItems: "center",
     marginTop: 20
   },
-  REWgCaHt: {
+  QDPLstuS: {
     width: 50,
     height: 50,
     borderRadius: 25
   },
-  nfoIcXlv: {
+  URXGJskQ: {
     marginLeft: 10
   },
-  ERXDylgp: {
+  encuQQFF: {
     fontSize: 16,
     fontWeight: "bold"
   },
-  sHGWRGsV: {
+  HwqyHiTD: {
     fontSize: 14,
     color: "#666"
   },
-  sYcveHIf: {
+  gYhDDMSr: {
     fontSize: 16,
     color: "#666",
     marginTop: 10
   },
-  vxujjyXA: {
+  bMIjLPki: {
     fontSize: 16,
     color: "#666",
     marginTop: 10
   },
-  MmToBZiT: {
+  DLMLALdg: {
     flexDirection: "row",
     justifyContent: "space-around",
     width: "100%",

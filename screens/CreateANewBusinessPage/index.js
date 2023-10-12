@@ -11,39 +11,39 @@ const BusinessScreen = () => {
   const [contact, setContact] = useState('');
   const [businessNumber, setBusinessNumber] = useState('');
   const [socialLink, setSocialLink] = useState('');
-  return <SafeAreaView style={_styles.QNrbiAtJ}>
-      <ScrollView style={_styles.VYjfvkqO}>
+  return <SafeAreaView style={_styles.GbyZoyWm}>
+      <ScrollView style={_styles.EeFLbcpJ}>
         <Text>Title</Text>
-        <TextInput value={title} onChangeText={setTitle} style={_styles.FVROpAAV} />
+        <TextInput value={title} onChangeText={setTitle} style={_styles.mTaQUqao} />
 
         <Image source={{
         uri: 'https://tinyurl.com/42evm3m3'
-      }} style={_styles.HWEIvMWD} />
+      }} style={_styles.rwZPjQLM} />
 
         <Text>Business Name</Text>
-        <TextInput value={businessName} onChangeText={setBusinessName} style={_styles.ePJsMbbF} />
+        <TextInput value={businessName} onChangeText={setBusinessName} style={_styles.CKNgNEcT} />
 
         <Text>Business Tagline</Text>
-        <TextInput value={tagline} onChangeText={setTagline} style={_styles.TAQOlHVk} />
+        <TextInput value={tagline} onChangeText={setTagline} style={_styles.BoDhlKyH} />
 
         <Text>Business Description</Text>
-        <TextInput value={description} onChangeText={setDescription} style={_styles.NARvRmsE} />
+        <TextInput value={description} onChangeText={setDescription} style={_styles.NqpqMbHE} />
 
         <Text>Additional Links</Text>
-        <TextInput value={links} onChangeText={setLinks} style={_styles.KFjpHvRG} />
+        <TextInput value={links} onChangeText={setLinks} style={_styles.CuyCuKUE} />
 
         <Text>Contact Information</Text>
-        <TextInput value={contact} onChangeText={setContact} style={_styles.cfREnzPr} />
+        <TextInput value={contact} onChangeText={setContact} style={_styles.dOERwpIt} />
 
         <Text>Business Number</Text>
-        <TextInput value={businessNumber} onChangeText={setBusinessNumber} style={_styles.bsCfIEAp} />
+        <TextInput value={businessNumber} onChangeText={setBusinessNumber} style={_styles.uKDRhLga} />
 
         <Text>Social Media Links</Text>
-        <TextInput value={socialLink} onChangeText={setSocialLink} style={_styles.MfqrxLfY} />
+        <TextInput value={socialLink} onChangeText={setSocialLink} style={_styles.nEScudIM} />
 
         <Button title="More" onPress={() => {}} />
 
-        <View style={_styles.OvblLjbn}>
+        <View style={_styles.SaMRsisi}>
           <Button title="Save" onPress={() => {}} />
           <Button title="Cancel" onPress={() => {}} />
         </View>
@@ -54,67 +54,67 @@ const BusinessScreen = () => {
 export default BusinessScreen;
 
 const _styles = StyleSheet.create({
-  QNrbiAtJ: {
+  GbyZoyWm: {
     flex: 1,
     backgroundColor: "#fff"
   },
-  VYjfvkqO: {
+  EeFLbcpJ: {
     padding: 20
   },
-  FVROpAAV: {
+  mTaQUqao: {
     borderWidth: 1,
     borderColor: "#ddd",
     padding: 10,
     marginBottom: 20
   },
-  HWEIvMWD: {
+  rwZPjQLM: {
     width: "100%",
     height: 200,
     marginBottom: 20
   },
-  ePJsMbbF: {
+  CKNgNEcT: {
     borderWidth: 1,
     borderColor: "#ddd",
     padding: 10,
     marginBottom: 20
   },
-  TAQOlHVk: {
+  BoDhlKyH: {
     borderWidth: 1,
     borderColor: "#ddd",
     padding: 10,
     marginBottom: 20
   },
-  NARvRmsE: {
+  NqpqMbHE: {
     borderWidth: 1,
     borderColor: "#ddd",
     padding: 10,
     marginBottom: 20
   },
-  KFjpHvRG: {
+  CuyCuKUE: {
     borderWidth: 1,
     borderColor: "#ddd",
     padding: 10,
     marginBottom: 20
   },
-  cfREnzPr: {
+  dOERwpIt: {
     borderWidth: 1,
     borderColor: "#ddd",
     padding: 10,
     marginBottom: 20
   },
-  bsCfIEAp: {
+  uKDRhLga: {
     borderWidth: 1,
     borderColor: "#ddd",
     padding: 10,
     marginBottom: 20
   },
-  MfqrxLfY: {
+  nEScudIM: {
     borderWidth: 1,
     borderColor: "#ddd",
     padding: 10,
     marginBottom: 20
   },
-  OvblLjbn: {
+  SaMRsisi: {
     flexDirection: "row",
     justifyContent: "space-between",
     marginTop: 20

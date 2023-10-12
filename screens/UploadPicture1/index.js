@@ -47,7 +47,7 @@ const App = () => {
       <Button title="Take a photo" onPress={takePhoto} />
       {image && <Image source={{
       uri: image
-    }} style={styles.wNozUkfS} />}
+    }} style={styles.MsTVpQHI} />}
     </SafeAreaView>;
 };
 
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center'
   },
-  wNozUkfS: {
+  MsTVpQHI: {
     width: 200,
     height: 200
   }

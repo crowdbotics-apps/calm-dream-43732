@@ -1,6 +1,6 @@
 import axios from "axios"
 const calmdreamAPI = axios.create({
-  baseURL: "https://puresocial-43732.botics.co",
+  baseURL: "https://cuesocial-43732.botics.co",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 function api_docs_schema_retrieve(payload) {
